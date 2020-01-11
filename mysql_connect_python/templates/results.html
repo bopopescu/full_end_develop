@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>{{ the_title }}</h2>
+
+<p>你添加的商品信息如下:</p>
+<table>
+<tr><td>name:</td><td>{{ the_name}}</td></tr>
+<tr><td>price:<td>{{ the_price }}</td></tr>
+<tr><td>discount:</td><td>{{ the_discount }}</td></tr>
+<tr><td>img:</td><td>{{ the_img }}</td></tr>
+
+</table>
+
+<h4> "{{the_name }}" is appended into MYSQL, please input url:127.0.0.1:3000 to check</h4>
+
+
+{% endblock %}
